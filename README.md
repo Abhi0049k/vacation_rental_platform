@@ -75,25 +75,35 @@ List out the key features of your application.
 
 Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
-```bash
-npm install my-project
-cd my-project
-npm start
-```
+1. Clone the project:
 
-## Usage
+    ```bash
+    git clone git@github.com:Abhi0049k/vacation-rental-platform.git
+    ```
 
-Provide instructions and examples on how to use your project.
+2. Copy the `.env.example` to `.env` for both the backend and react-frontend.
 
-```bash
-# Example
-```
+3. Navigate to the `backend` folder and the `frontend` folder separately and install dependencies:
 
-Include screenshots as necessary.
+    ```bash
+    cd backend
+    yarn
+    ```
+
+    ```bash
+    cd react-frontend
+    yarn
+    ```
+
+4. Run both the `backend` and `frontend`:
+
+    ```bash
+    yarn run dev
+    ```
 
 ## Credentials
 
-Provide user credentials for autheticated pages
+Provide user credentials for authenticated pages
 
 ## APIs Used
 
@@ -101,9 +111,9 @@ If your application relies on external APIs, document them and include any neces
 
 ## API Endpoints
 
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
+In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.  
+GET /api/items - retrieve all items  
+POST /api/items - create a new item  
 
 ## Technology Stack
 
@@ -117,4 +127,3 @@ A brief overview of the technologies used in the project.
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Recoil](https://img.shields.io/badge/Recoil-%23313131.svg?style=for-the-badge&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-%23313131.svg?style=for-the-badge&logo=typescript&logoColor=white)
-
