@@ -13,38 +13,71 @@ Database: https://deployed-site.whatever
 
 ## Directory Structure
 Vacation-Rental-Platform
+
 ├── backend
+
 │   ├── prisma
+
 │   │   ├── migrations
+
 │   │   └── schema.prisma
+
 │   └── src
+
 │       ├── configs
+
 │       ├── middlewares
+
 │       ├── controllers
+
 │       ├── routes
+
 │       ├── shared
+
 │       ├── validations
+
 │       └── index.js
+
 ├── frontend
+
 │   ├── src
+
 │   │   ├── components
+
 │   │   ├── hooks
+
 │   │   ├── store
+
 │   │   ├── pages
+
 │   │   ├── shared
+
 │   │   ├── App.tsx
+
 │   │   ├── index.css
+
 │   │   ├── main.tsx
+
 │   │   └── vite-env.d.ts
+
 │   ├── .eslintrc.cjs
+
 │   ├── index.html
+
 │   ├── package.json
+
 │   ├── postcss.config.js
+
 │   ├── tailwind.config.js
+
 │   ├── tsconfig.json
+
 │   ├── tsconfig.node.json
+
 │   ├── vite.config.ts
+
 │   └── yarn.lock
+
 └── README.md
 
 
