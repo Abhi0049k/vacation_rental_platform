@@ -35,9 +35,10 @@ const useLogin = (role: string) => {
                 navigate("/host-dashboard");
             } else if (role === Role.guest) {
                 console.log("Guest Functionality Not implemented yet.")
-                // const res: AxiosResponse = await axios.post(`${backendServerUrl}host/signin`, credentials);
-                // setToken(() => res.data.token);
-                // navigate("/host-dashboard");
+                const res: AxiosResponse = await axios.post(`${backendServerUrl}guest/signin`, credentials);
+                setToken(() => res.data.token);
+                console.log("Login Successful: ", { token: res.data.token })
+                navigate("/");
             }
         } catch (err) {
             console.log(err);

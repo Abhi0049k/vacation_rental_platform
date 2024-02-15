@@ -15,7 +15,7 @@ router.post("/signup", async (req: Request, res: Response, next: NextFunction) =
         if (!check.success) return next({ status: 422, message: "Invalid Input" });
         const hostExists = await prisma.host.findUnique({ where: { email } })
         if (hostExists) return next({ status: 409, message: "Host Already Exists" })
-        const hashed_password = await hash(password, SALT_ROUNDS);
+        const hashed_password: string = await hash(password, SALT_ROUNDS);
         const newHost = await prisma.host.create({ data: { name, email, about, password: hashed_password }, select: { id: true, email: true, name: true } });
         res.status(200).send({ message: "New Host Created" })
     } catch (err) {
@@ -34,7 +34,7 @@ router.post("/signin", async (req: Request, res: Response, next: NextFunction) =
         if (!hostDetails) return next({ status: 404, message: "Host Doesn't Exists" });
         const result = await compare(password, hostDetails.password);
         if (!result) return next({ status: 422, message: "Wrong Password" });
-        const token: string = sign({ email: hostDetails.email }, JWT_SECRET_KEY);
+        const token: string = sign({ id: hostDetails.id }, JWT_SECRET_KEY, { expiresIn: "72h" });
         res.status(200).send({ message: "Login Successful", token });
     } catch (err) {
         console.log("host/signin: ", err)

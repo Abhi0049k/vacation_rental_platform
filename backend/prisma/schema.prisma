@@ -40,9 +40,11 @@ model Host {
 
 model Property {
   id            String       @id @default(uuid())
+  title         String
   city          String
   state         String
   address       String
+  img_url       String
   pincode       String
   property_type PropertyType
   host_id       String

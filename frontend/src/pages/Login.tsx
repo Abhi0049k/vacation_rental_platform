@@ -17,7 +17,6 @@ import { Role, RoleI } from "@/shared/types";
 
 const Login: FC<RoleI> = ({ role }) => {
     const { credentials, handleChange, handleSubmit, loading } = useLogin(role);
-
     useEffect(() => {
         role === Role.host ? document.title = "VRP | Host Login" : document.title = "VRP | Guest Login"
     })
