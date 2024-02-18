@@ -25,7 +25,6 @@ const useHostRegister = () => {
 
     const handleTextArea = useCallback((event: React.ChangeEvent<HTMLTextAreaElement>) => {
         const val: string = event.target.value;
-        // const name: string = event.target.name;
         setCredentials((prev) => ({ ...prev, about: val }))
     }, [])
 

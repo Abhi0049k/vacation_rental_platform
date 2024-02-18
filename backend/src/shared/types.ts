@@ -32,6 +32,19 @@ enum PropertyType {
     Unique_Homes = "Unique_Homes"
 }
 
+
+export interface PropertyI {
+    id: string;
+    title: string;
+    city: string;
+    state: string;
+    address: string;
+    img_url: string;
+    pincode: string;
+    property_type: PropertyType;
+    host_id: string;
+}
+
 export interface PropertyCreateI {
     title: string;
     city: string;
@@ -40,4 +53,9 @@ export interface PropertyCreateI {
     img_url: string;
     pincode: string;
     property_type: PropertyType;
+}
+
+export interface locationI {
+    city: string;
+    state: string;
 }

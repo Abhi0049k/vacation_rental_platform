@@ -16,12 +16,12 @@ const Navbar: FC = () => {
                     {
                         token ?
                             <Button variant={"destructive"} onClick={handleLogoutClick}>Logout</Button>
-                            : <Button variant={"secondary"} asChild><Link to={"/guest-login"}>Login</Link></Button>
+                            : <><Button variant={"secondary"} asChild><Link to={"/guest-login"}>Login</Link></Button>
+                                <Button variant={"secondary"} asChild><Link to={"/host-login"}>Host Login</Link></Button></>
                     }
                     <ModeToggle />
                 </div>
             </div>
-
         </nav>
     )
 }

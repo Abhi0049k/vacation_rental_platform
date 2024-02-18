@@ -6,6 +6,7 @@ const useLogout = () => {
     const [token, setToken] = useRecoilState(tokenAtom);
 
     const handleLogoutClick = useCallback(() => {
+        localStorage.removeItem("token");
         setToken(() => "");
     }, [setToken]);
 
