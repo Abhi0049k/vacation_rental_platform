@@ -2,7 +2,7 @@
   "name": "backend",
   "description": "Backend for vacation rental platform like Airbnb",
   "version": "1.0.0",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc -b",
