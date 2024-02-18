@@ -11,8 +11,7 @@ Frontend | Backend | Fullstack
 ## Deplolyed App
 
 Frontend: https://deployed-site.whatever  
-Backend: https://deployed-site.whatever  
-Database: https://deployed-site.whatever  
+Backend: https://vrp-tkyv.onrender.com/
 
 ## Directory Structure
 
@@ -58,6 +57,13 @@ Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
 ## Video Walkthrough of the codebase
 
 Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+
+## Screenshots
+
+![guestregister](https://github.com/Abhi0049k/Metta-Social/assets/112062354/6c16521d-8f62-4274-a6a1-9d2ed25040e8)
+![login page](https://github.com/Abhi0049k/Metta-Social/assets/112062354/fd4672dd-72dd-43f5-808d-1b9adedff2d3)
+![landing](https://github.com/Abhi0049k/Metta-Social/assets/112062354/9d225a7a-3460-438c-b110-f4ba015894b9)
+![properties](https://github.com/Abhi0049k/Metta-Social/assets/112062354/6ee7799d-14c3-41d8-be13-f8c299d9179c)
 
 ## Features
 
@@ -127,3 +133,5 @@ A brief overview of the technologies used in the project.
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Recoil](https://img.shields.io/badge/Recoil-%23313131.svg?style=for-the-badge&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-%23313131.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![shadcn-ui](https://img.shields.io/badge/shadcn_ui-%234488ff.svg?style=for-the-badge&logo=shadcn-ui&logoColor=white)
+![aceternity-ui](https://img.shields.io/badge/aceternity_ui-%23FF5733.svg?style=for-the-badge&logo=aceternity-ui&logoColor=white)
