@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc -b",
-    "start": "node index.js"
+    "start": "node dist/index.js"
   },
   "repository": "https://github.com/Abhi0049k/vacation_rental_platform",
   "author": "Mangalam Kumar",
