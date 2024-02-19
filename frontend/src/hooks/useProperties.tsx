@@ -21,7 +21,7 @@ const useProperties = () => {
         setLoading(() => true);
         try {
             const queryParams = Object.entries(queries)
-                .filter(([key, value]) => value !== undefined && value !== 0 && value !== "" && value !== null)
+                .filter(([_key, value]) => value !== undefined && value !== 0 && value !== "" && value !== null)
                 .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
                 .join("&");
             const urlWithQueries = `${backendServerUrl}property/?${queryParams}`
